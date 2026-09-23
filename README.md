@@ -20,10 +20,8 @@ https://meetkpatel-portfolio-website.vercel.app/
 ## 🛠️ Tech Stack
 
 - **Frontend:** React.js, Next.js, JavaScript, Tailwind CSS
-- **AI/ML:** Python, Scikit-learn, Deep Learning, NLP, Generative AI
 - **Backend:** Node.js, Express.js
-- **Database:** MongoDB, PostgreSQL
-- **Tools:** Git, GitHub, Postman, Docker
+- **Tools:** Git, GitHub, Postman
 - **Deployment:** Vercel
 
 ## 📂 Featured Projects
