@@ -76,7 +76,7 @@ export const AboutSection = () => {
 
                 <span
                   className={twMerge(
-                    "font-mono text-[#2546BD] text-3xl md:text-5xl uppercase",
+                    "text-[#2546BD] text-3xl md:text-5xl uppercase tracking-tighter",
                     anton.className,
                   )}
                 >
