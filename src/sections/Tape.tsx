@@ -46,7 +46,7 @@ export const TapeSection = ({
                       {word}
                     </span>
                     <span className="text-[#2546BD] text-opacity-90 font-mono uppercase font-bold text-sm tracking-widest whitespace-nowrap">
-                      ///
+                      {"///"}
                     </span>
                   </div>
                 ))}

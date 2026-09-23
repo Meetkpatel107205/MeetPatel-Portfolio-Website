@@ -230,7 +230,7 @@ export const HeroSection = () => {
                 }`}
               >
                 <span className="block text-[20vw] sm:text-[18vw] md:text-[16vw] lg:text-[12vw]">
-                  HI I'M
+                  HI I&apos;M
                 </span>
                 <span className="block text-[20vw] sm:text-[18vw] md:text-[16vw] lg:text-[12vw]">
                   MEET

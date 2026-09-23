@@ -8,7 +8,7 @@ const ExperienceCard = () => {
         <div className='flex flex-col md:w-[40%]'>
             <h3 className={twMerge("font-mono text-3xl w-full text-[#2546BD] uppercase group-hover:pl-3 transition-all", anton.className)}>BrainyBeam Infotech Pvt. Ltd.</h3>
             <span className='font-mono text-[#2546BD]/50 text-xs uppercase mt-1'>Web Developer</span>
-            <span className='font-mono text-[#2546BD] bg-[#2546BD]/10 px-2 py-1 w-fit whitespace-nowrap inline-block text-xs uppercase mt-2 rounded-sm'>May' 25 - Jun' 25</span>
+            <span className='font-mono text-[#2546BD] bg-[#2546BD]/10 px-2 py-1 w-fit whitespace-nowrap inline-block text-xs uppercase mt-2 rounded-sm'>May&apos; 25 - Jun&apos; 25</span>
         </div>
 
         <div className='mt-2 opacity-80'>

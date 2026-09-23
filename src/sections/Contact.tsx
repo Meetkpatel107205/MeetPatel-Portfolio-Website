@@ -32,7 +32,7 @@ export const ContactSection = () => {
                   Start a Project
                 </span>
                 <span className="font-mono font-bold text-[2.8rem] leading-none tracking-tighter md:text-4xl lg:text-7xl text-[#fdf9f2] uppercase cursor-pointer group-hover:opacity-80">
-                  Let's Create Something Iconic.
+                  Let&apos;s Create Something Iconic.
                 </span>
               </div>
             </div>
