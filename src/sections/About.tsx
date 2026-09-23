@@ -27,8 +27,8 @@ import PostgresIcon from "@/assets/icons/PostgresSQL.svg";
 import PostmanLogo from "@/assets/icons/Postman.svg";
 import PythonIcon from "@/assets/icons/Python.svg"
 import ScilnIcon from "@/assets/icons/scikit-learn.svg"
-import KaggleIcon from "@/assets/icons/kaggle.svg"
-import DockerIcon from "@/assets/icons/docker.svg"
+import KaggleIcon from "@/assets/icons/Kaggle.svg"
+import DockerIcon from "@/assets/icons/Docker.svg"
 import ToolTip from "@/components/ToolTip";
 import React from "react";
 

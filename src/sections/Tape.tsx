@@ -3,15 +3,15 @@ import { twMerge } from "tailwind-merge";
 
 const words = [
   "Performant",
-  "Intelligent",
+  "Accessible",
   "Secure",
-  "Data-Driven",
+  "Interactive",
   "Scalable",
-  "AI-Powered",
+  "User Friendly",
   "Responsive",
-  "Predictive",
   "Maintainable",
-  "Automated",
+  "Search Optimized",
+  "Usable",
   "Reliable",
 ];
 
@@ -46,7 +46,7 @@ export const TapeSection = ({
                       {word}
                     </span>
                     <span className="text-[#2546BD] text-opacity-90 font-mono uppercase font-bold text-sm tracking-widest whitespace-nowrap">
-                      {"///"}
+                      ///
                     </span>
                   </div>
                 ))}
