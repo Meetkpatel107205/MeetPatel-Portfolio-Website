@@ -62,7 +62,7 @@ const ProjectCard = ({
         </a>
 
         <div className="flex flex-col h-full w-full md:w-1/2 group bg-[#fdf9f2] group-hover:bg-[#2546BD]/5">
-          <div className="flex items-center justify-between p-6 border-b border-[#2546BD]/20">
+          <div className="flex items-center justify-between p-4 border-b border-[#2546BD]/20">
             <div className="flex flex-col">
               <span className="font-mono font-bold text-[#2546BD]/60 uppercase text-[12px] tracking-wider">
                 Category
@@ -86,7 +86,7 @@ const ProjectCard = ({
             <div className="self-start flex flex-col gap-4">
               <span
                 className={twMerge(
-                  "text-5xl md:text-7xl text-[#2546BD] uppercase tracking-tighter group-hover:translate-x-2 transition-all duration-200 ease-in",
+                  "text-4xl md:text-7xl text-[#2546BD] uppercase tracking-tighter group-hover:translate-x-2 transition-all duration-200 ease-in",
                   anton.className,
                 )}
               >
@@ -107,7 +107,7 @@ const ProjectCard = ({
                   md:max-w-none
                   md:w-full
                   leading-relaxed
-                  line-clamp-3
+                  line-clamp-2
                   md:line-clamp-none
                   "
               >

@@ -6,9 +6,9 @@ import ProjectCard from "@/components/ProjectCard";
 const portfolioProjects = [
   {
     category: "ML Regression",
-    year: "2025",
+    year: "2026",
     title: "Mental Health Score",
-    subtitle: "Scikit-Learn Pipeline + FastAPI Integration",
+    subtitle: "Sklearn Pipeline + FastAPI",
     description:
       "Predicts student mental health scores from behavioral & lifestyle data — social media usage, sleep, study hours, and physical activity — using a tuned Random Forest with R² of 0.88.",
     highlight:
@@ -18,7 +18,7 @@ const portfolioProjects = [
   },
   {
     category: "ML Classification + XAI",
-    year: "2025",
+    year: "2026",
     title: "Credit Risk Assessment",
     subtitle: "XGBoost + SHAP Explainability",
     description:
@@ -30,7 +30,7 @@ const portfolioProjects = [
   },
   {
     category: "Deep Learning / NLP",
-    year: "2025",
+    year: "2026",
     title: "Emotion Classifier",
     subtitle: "RNN · LSTM · Bidirectional GRU",
     description:
