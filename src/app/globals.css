@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .nav-item {
+    @apply px-6 py-2 rounded-full text-gray-900/60 text-sm font-semibold hover:bg-white/30 hover:text-gray-900 transition duration-300;
+  }
+}
+
+@layer components {
+  .btn-pill {
+    @apply inline-flex items-center gap-2 px-6 py-2 rounded-full text-sm font-semibold transition duration-300 text-gray-900;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply lg:max-w-5xl;
+  }
+}
+
+/* AW-2025 Work Section Styles */
+.s__scene__letter {
+  --head: calc((var(--progress) - 0.5) * -2);
+  --ahead: calc(var(--head) * var(--head));
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  font:
+    700 min(18.75rem, 25vh) / 0.85 var(--font-anton),
+    sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff0eb;
+  transform: rotateY(calc(var(--head) * -10deg * var(--state)))
+    translate3d(
+      calc(var(--head) * 50vw * var(--state)),
+      calc(var(--iy) * 50% * var(--ahead) * var(--state)),
+      0
+    );
+  pointer-events: none;
+  will-change: transform;
+  line-height: 0.85;
+}
+
+/* Medium screens (max-width: 1280px) */
+@media (max-width: 1280px) {
+  .s__scene__letter {
+    font-size: min(16rem, 22vh);
+  }
+}
+
+/* Tablet (max-width: 987px) */
+@media (max-width: 987px) {
+  .s__scene__letter {
+    font-size: min(14rem, 20vh);
+  }
+}
+
+/* Phone (max-width: 767px) */
+@media (max-width: 767px) {
+  .s__scene__letter {
+    font-size: min(12rem, 18vh);
+  }
+}
+
+.s__scene__letter::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: #540000;
+  opacity: min(calc(var(--state) * 2), 1);
+  transform: scale(1.05, 1.02)
+    translate3d(calc(var(--head) * 0.1rem * var(--state) * var(--state)), 0, 0);
+  transform-origin: calc(50% - var(--head) * 50%) -50%;
+  will-change: opacity, transform;
+  content: attr(data-letter);
+}
+
+.s__scene__work {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform-style: preserve-3d;
+  will-change: transform;
+  /* Move with scrolling characters - no rotation on own axis, just horizontal movement */
+  transform: translate3d(
+      calc(var(--progress) * (50vw + 100%) - 50%),
+      calc(var(--y) * 50% - 50%),
+      calc(var(--progress) * var(--progress) * -5rem)
+    )
+    scale(var(--size, 1));
+}
+
+/* Tablet (max-width: 987px) */
+@media (max-width: 987px) {
+  .s__scene__work {
+    transform: translate3d(
+        calc(var(--progress) * (50vw + 100%) - 50%),
+        calc(var(--y) * 50% - 50%),
+        calc(var(--progress) * var(--progress) * -5rem)
+      )
+      scale(var(--size, 1));
+  }
+}
+
+/* Phone (max-width: 767px) */
+@media (max-width: 767px) {
+  .s__scene__work {
+    transform: translate3d(
+        calc(var(--progress) * (50vw + 100%) - 50%),
+        calc(var(--y) * 100% - 50%),
+        calc(var(--progress) * var(--progress) * -5rem)
+      )
+      scale(var(--size, 1));
+  }
+}
+
+/* Responsive styles for Work section */
+.work-ruler {
+  --width: min(16.6667%, 19.625rem);
+  left: calc(50% - var(--width) / 2);
+  width: var(--width);
+}
+
+/* Tablet (max-width: 987px) */
+@media (max-width: 987px) {
+  .work-ruler {
+    --width: 33.3333%;
+  }
+}
+
+/* Phone (max-width: 767px) */
+@media (max-width: 767px) {
+  .work-ruler {
+    --width: 50%;
+  }
+}
+
+/* Work container - responsive transform */
+.work-container {
+  transform: translate3d(0, calc(var(--scroll-progress) * -15%), 0);
+}
+
+@media (max-width: 767px) {
+  .work-container {
+    transform: none;
+  }
+}
+
+/* Work canvas - responsive transform */
+.work-canvas {
+  transform: translate3d(0, calc(var(--scroll-progress) * -5%), 0);
+}
+
+@media (max-width: 767px) {
+  .work-canvas {
+    transform: none;
+  }
+}
+
+/* Work video card responsive sizes */
+.work-video {
+  max-width: 50vw;
+  max-height: 50vh;
+}
+
+/* Phone (max-width: 767px) */
+@media (max-width: 767px) {
+  .work-video {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+}
